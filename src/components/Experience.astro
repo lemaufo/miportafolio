@@ -1,0 +1,32 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+{
+    date: "Enero 2025 - Actualmente",
+    title: "Desarrollador Web FullStack",
+    company: "JRL Sistemas",
+    description:
+      "Responsable del desarrollo de una App Web gamificada para la optimización de tareas de los empleados dentro de la empresa.",
+    link: "#",
+  },
+  {
+    date: "Mayo - Agosto 2023",
+    title: "Desarrollador Front-End",
+    company: "Teknologix",
+    description:
+      "Creé el Sitio Web de la empresa para mostrar información de Servicios, Soporte y Contacto",
+    link: "https://www.teknologix.mx",
+  },
+]
+---
+
+<ol class="relative mt-16">
+    {
+      EXPERIENCE.map((experience) => (
+        <li class="">
+          <ExperienceItem {...experience} />
+        </li>
+      ))
+    }
+  </ol>
+

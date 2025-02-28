@@ -1,11 +1,14 @@
 ---
 import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 import Welcome from '../components/Welcome.astro';
 import SocialPill from '../components/SocialPill.astro';
 import LinkedIn from '../components/icons/LinkedIn.astro';
 import GitHub from '../components/icons/GitHub.astro';
 import Mail from '../components/icons/Mail.astro';
 import Layout from '../layouts/Layout.astro';
+import Experience from '../components/Experience.astro';
+import Briefcase from '../components/icons/Briefcase.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -13,8 +16,8 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Portafolio - Leiber" description="Contrata Desarrollador, Programador Web Front-End">
 	 <main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
-			<img class="rounded-full w-12 h-12 mb-4" src="https://symbl-world.akamaized.net/i/webp/76/82f32524fb743dbc62cd86fba89f6e.webp" alt="photo">
+		<SectionContainer class="py-44 pb-24">
+			<img class="rounded-full size-12 mb-4" src="https://symbl-world.akamaized.net/i/webp/76/82f32524fb743dbc62cd86fba89f6e.webp" alt="photo">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
 				Hola, soy Leiber <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="flex justify-center items-center">
 					<Badge>Disponible para trabajar</Badge>
@@ -26,18 +29,30 @@ import Layout from '../layouts/Layout.astro';
 
 			<nav class="flex gap-x-4 mt-8" >
 				<SocialPill>
-					<LinkedIn class="w-6 h-6" href="#"/>
+					<LinkedIn class="size-6" href="#"/>
 					LinkedIn
 				</SocialPill>
 				<SocialPill>
-					<GitHub class="w-6 h-6" href="#"/>
+					<GitHub class="size-6" href="#"/>
 					GitHub
 				</SocialPill>
 				<SocialPill>
-					<Mail class="w-6 h-6" href="#"/>
+					<Mail class="size-6" href="#"/>
 					Contáctame
 				</SocialPill>
 			</nav>
-		</section>
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Briefcase class="size-8" />
+				Experiencia laboral
+			</h2>
+			<Experience/>
+		</SectionContainer>
+
+		<SectionContainer>
+			
+		</SectionContainer>
 	 </main>
 </Layout>

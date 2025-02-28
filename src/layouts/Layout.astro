@@ -28,12 +28,19 @@ import '@fontsource-variable/onest'
 
 	html{
 		font-family: "Onest variable", system-ui, sans-serif;
+		scroll-behavior: smooth;
 	}
 
 	body {
 		background: #050505;
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
+		min-height: 100vh;
+	}
+
+	@media (prefers-reduced-motion){
+		html{
+			scroll-behavior: auto;
+		}
 	}
 </style>
