@@ -1,4 +1,5 @@
 ---
+import Badge from '../components/Badge.astro';
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
@@ -7,5 +8,17 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	 <main>
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<img class="rounded-full w-12 h-12 mb-4" src="https://symbl-world.akamaized.net/i/webp/76/82f32524fb743dbc62cd86fba89f6e.webp" alt="photo">
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+				Hola, soy Leiber <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="flex justify-center items-center">
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+			</h1>
+			<h2 class="text-xl opacity-80">Desarrollador Web, enfocado en Front-End, de México. 
+				Especializado en crear soluciones innovadoras y atractivas.
+			</h2>
+		</section>
+	 </main>
 </Layout>
