@@ -4,8 +4,9 @@ import { motion } from "motion/react";
 
 export function ColourfulText({ text }: { text: string }) {
   const colors = [
-    "rgba(14, 165, 233, 1)", //L
-    // "rgb(131, 179, 32)",
+    // "rgb(0, 150, 255)",
+    "rgb(0, 153, 255)"
+    // "rgb(131, 179, 32)",oklch(0.546 0.245 262.881)
     // "rgb(47, 195, 106)",
     // "rgb(42, 169, 210)",
     // "rgb(4, 112, 202)",
