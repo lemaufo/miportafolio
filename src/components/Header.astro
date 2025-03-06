@@ -38,16 +38,19 @@ const navItems = [
     title: GitHub,
     label: "github",
     url: "https://github.com/lemaufo",
+    external: true,
   },
   {
     title: LinkedIn,
     label: "linkedin",
     url: "https://linkedin.com/in/leiber-trejo",
+    external: true,
   },
   {
     title: Instagram,
     label: "instagram",
     url: "https://instagram.com/lemaufo",
+    external: true,
   }
 ]
 ---
@@ -61,9 +64,13 @@ const navItems = [
   
     {navItems.map((item) => (
       
-        <a href={item.url} class="m-3">
-          {typeof item.title === "string" ? item.title : <item.title />} 
-        </a>
+      <a 
+        href={item.url} 
+        class="m-3 text-white-100 hover:text-sky-500 transition-colors duration-300"
+        {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      >
+        {typeof item.title === "string" ? item.title : <item.title />}
+      </a>
       
     ))}
   
