@@ -10,10 +10,9 @@ import Projects from '../components/Projects.astro';
 import AboutMe from '../components/AboutMe.astro';
 import AboutIcon from '../components/icons/AboutMe.astro';
 import ProjectItem from '../components/ProjectItem.astro';
-import { ColourfulText } from '../components/ui/Leiber';
+import Leiber from '../components/Leiber.astro';
+import Me from '../components/Me.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title="Portafolio - Leiber" description="Contrata Desarrollador, Programador Web Front-End">
@@ -21,20 +20,14 @@ import { ColourfulText } from '../components/ui/Leiber';
 		<SectionContainer class="py-40 pb-32"> 
 			<!-- <img class="rounded-full size-12 mb-4" src="https://symbl-world.akamaized.net/i/webp/76/82f32524fb743dbc62cd86fba89f6e.webp" alt="photo"> -->
 			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-				
-				<!-- <span class="text-transparent bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500  bg-clip-text"> soy Leiber</span> -->
 				<a href="https://www.linkedin.com" target="_blank" rel="noopener" class="flex justify-center items-center">
 					 <Badge />
 				</a>
-				
 			</h1>
 			
 			<span class="text-white text-5xl md:text-6xl lg:text-6xl font-base">Hola, </span>
 
-			<ColourfulText 
-				text="soy Leiber" 
-				client:load
-			/>
+			<Leiber />
 
 			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px] text-white py-3">
 				<span>Desarrollador Web enfocado en</span>,
@@ -42,7 +35,7 @@ import { ColourfulText } from '../components/ui/Leiber';
 				<span class="text-sky-500 text-pretty font-semibold">innovadoras, intuitivas y modernas </span> con atención a los detalles.
 			</h2>
 
-			<nav class="flex gap-4 mt-8 flex-wrap">
+			<nav class="flex gap-4 mt-5 flex-wrap">
 				<CV href="mailto:leibertrejo8@gmail.com">
 					Descargar CV
 				</CV>
@@ -54,9 +47,7 @@ import { ColourfulText } from '../components/ui/Leiber';
 				<Code class="size-8" />
 				<span class="text-sky-500">Proyectos</span>
 			</h2>
-			<!-- <Projects /> -->
-			
-			
+			<Projects />
 
 			<ProjectItem />
 
@@ -76,6 +67,7 @@ import { ColourfulText } from '../components/ui/Leiber';
 				<span class="text-sky-500">Acerca de mi</span>
 			</h2>
 			<AboutMe />
+			 <Me />
 		</SectionContainer>
 	 </main>
 </Layout>

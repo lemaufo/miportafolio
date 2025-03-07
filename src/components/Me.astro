@@ -1,0 +1,15 @@
+---
+import { TextGenerateEffect } from '../components/ui/AboutMe';
+
+const words = `Texto de prueba
+        `;
+---
+
+<!-- Uso del componente con la prop obligatoria "words" -->
+<TextGenerateEffect 
+words={words}   
+  className="" 
+  duration={0.8} 
+  filter={true} 
+  client:load 
+/>

@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "../../libs/utils.ts";
-// import Image from "../../../public/favicon.webp";
 import React, {
   createContext,
   useState,
