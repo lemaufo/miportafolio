@@ -6,12 +6,11 @@ import Layout from '../layouts/Layout.astro';
 import Experience from '../components/Experience.astro';
 import Briefcase from '../components/icons/Briefcase.astro';
 import Code from '../components/icons/Code.astro';
-import Projects from '../components/Projects.astro';
 import AboutMe from '../components/AboutMe.astro';
 import AboutIcon from '../components/icons/AboutMe.astro';
 import ProjectItem from '../components/ProjectItem.astro';
 import Leiber from '../components/Leiber.astro';
-import Me from '../components/Me.astro';
+import Slogan from '../components/Slogan.astro';
 
 ---
 
@@ -40,14 +39,17 @@ import Me from '../components/Me.astro';
 					Descargar CV
 				</CV>
 			</nav>
+			
+			<!-- <div class="mt-10">
+				<Slogan/>
+			</div> -->
 		</SectionContainer>
 
 		<SectionContainer id="proyectos">
-			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+			<h2 class="text-3xl font-semibold flex gap-x-3 items-center">
 				<Code class="size-8" />
 				<span class="text-sky-500">Proyectos</span>
 			</h2>
-			<Projects />
 
 			<ProjectItem />
 
@@ -67,7 +69,6 @@ import Me from '../components/Me.astro';
 				<span class="text-sky-500">Acerca de mi</span>
 			</h2>
 			<AboutMe />
-			 <Me />
 		</SectionContainer>
 	 </main>
 </Layout>
