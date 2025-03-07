@@ -2,9 +2,9 @@
 import { CardContainer, CardBody, CardItem } from '../components/ui/Card';
 
 ---
-
-<CardContainer className="re-var" client:load>
-    <CardBody className="bg-slate-950/70 relative group/card hover:shadow-2xl dark:hover:shadow-2xl hover:shadow-sky-400/[0.15] dark:hover:shadow-sky-400/[0.15] dark:bg-slate-950/70 dark:border-white/[0.2] border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+<article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+  <CardContainer className="" client:load>
+    <CardBody className="bg-slate-950/70 relative group/card hover:shadow-2xl dark:hover:shadow-2xl hover:shadow-sky-400/[0.15] dark:hover:shadow-sky-400/[0.15] dark:bg-slate-950/70 dark:border-white/[0.2] border-white/[0.2] w-auto sm:w-[30rem] md:w-[45.8rem] lg:w-[46.3rem] h-auto rounded-xl p-6 border">
       <CardItem
         translateZ="50"
         className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -16,14 +16,14 @@ import { CardContainer, CardBody, CardItem } from '../components/ui/Card';
         translateZ="60"
         className="text-neutral-500 text-base max-w-sm mt-2 dark:text-neutral-300"
       >
-      Sitio Web de la empresa para mostrar información de Servicios, Soporte y Contacto.
+        Sitio Web de la empresa para mostrar información de Servicios, Soporte y Contacto.
       </CardItem>
       <CardItem translateZ="100" className="w-full mt-4">
         <img
           src="../../teknologix.jpg"
           height="1000"
           width="1000"
-          class="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+          class="sm:h-50 md:h-80 lg:h-100 w-full object-cover rounded-xl group-hover/card:shadow-xl"
           alt="thumbnail"
         />
       </CardItem>
@@ -48,9 +48,11 @@ import { CardContainer, CardBody, CardItem } from '../components/ui/Card';
       </div>
     </CardBody>
   </CardContainer>
+</article>
 
+<article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <CardContainer className="re-var" client:load>
-    <CardBody className="bg-slate-950/70 relative group/card hover:shadow-2xl dark:hover:shadow-2xl hover:shadow-sky-400/[0.15] dark:hover:shadow-sky-400/[0.15] dark:bg-slate-950/70 dark:border-white/[0.2] border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+    <CardBody className="bg-slate-950/70 relative group/card hover:shadow-2xl dark:hover:shadow-2xl hover:shadow-sky-400/[0.15] dark:hover:shadow-sky-400/[0.15] dark:bg-slate-950/70 dark:border-white/[0.2] border-white/[0.2] w-auto sm:w-[30rem] md:w-[45.8rem] lg:w-[46.3rem] h-auto rounded-xl p-6 border">
       <CardItem
         translateZ="50"
         className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -62,14 +64,14 @@ import { CardContainer, CardBody, CardItem } from '../components/ui/Card';
         translateZ="60"
         className="text-neutral-500 text-base max-w-sm mt-2 dark:text-neutral-300"
       >
-      Sitio Web del negocio para mostrar información de Servicios, Galería, Contacto, Ubicación.
+        Sitio Web del negocio para mostrar información de Servicios, Galería, Contacto, Ubicación.
       </CardItem>
       <CardItem translateZ="100" className="w-full mt-4">
         <img
           src="../../rvpark.jpg"
           height="1000"
           width="1000"
-          class="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+          class="sm:h-50 md:h-75 lg:h-100 w-full object-cover rounded-xl group-hover/card:shadow-xl"
           alt="thumbnail"
         />
       </CardItem>
@@ -86,3 +88,4 @@ import { CardContainer, CardBody, CardItem } from '../components/ui/Card';
       </div>
     </CardBody>
   </CardContainer>
+</article>
