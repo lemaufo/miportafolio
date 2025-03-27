@@ -1,5 +1,6 @@
 ---
 import CV from '../components/DownloadCV.astro';
+import Mail from '../components/SendMail.astro';
 
  const personalImageAlt = "Leiber Trejo"
 ---
@@ -24,8 +25,9 @@ import CV from '../components/DownloadCV.astro';
           >ser proactivo</strong>, <strong>leer</strong>, <strong>organizarme</strong> y <strong>aprender por mi cuenta</strong
         >. Mi intención es poder crear un atractivo visual en las ideas de las personas.
       </p>
-      <div class="flex justify-center mt-8">
-        <CV/>
+      <div class="flex gap-4 justify-center mt-5">
+        <CV class="mr-2"/>
+        <Mail/>
       </div>
     </div>
   </div>
